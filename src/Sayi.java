@@ -3,19 +3,16 @@ public class Sayi
 {
 	public static void main(String[] args)
 	{
-        int n ;
-        int number;
-        int min = 0;
-        int max = 0;
+        int n, number, min = 0, max = 0;
 
-        Scanner sca = new Scanner(System.in);
+        Scanner inp = new Scanner(System.in);
         System.out.print("Kaç adet sayi gireceksiniz?: ");
-        n = sca.nextInt();
+        n = inp.nextInt();
         System.out.print("\n");
 
         for (int i = 1; i<= n; i++) {
             System.out.println( i + ". sayýyý girin");
-            number = sca.nextInt();
+            number = inp.nextInt();
             System.out.print("\n");
 
             if (number > max) {
